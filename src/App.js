@@ -70,8 +70,8 @@ const App = (props) => {
               <Route exact path="/dashboard">
                 <DashboardScreen mainTheme={mainTheme}/>
               </Route>
-              <Route exact path="/">
-                <LoginScreen setLoggedInDetails={setLoggedInDetails}/>
+              <Route exact path="/Login">
+              <LoginScreen setLoggedInDetails={setLoggedInDetails}/>
               </Route>
             </Switch>
           }

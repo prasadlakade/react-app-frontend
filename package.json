@@ -1,7 +1,7 @@
 {
   "name": "react-app-frontend",
   "version": "0.1.0",
-  "homepage": "http://prasadlakade.github.io/react-app-frontend",
+  "homepage": "http://prasadlakade.github.io/react-app-frontend/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.1",

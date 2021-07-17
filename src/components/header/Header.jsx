@@ -30,7 +30,7 @@ const Header = (props) => {
                 <ul>
                   {(!authencationDetails.isloggedIn)
                     ? (<li>
-                      <Link to="/">Home</Link>
+                      <Link to="/">Login</Link>
                     </li>)
                     : null
                   }
