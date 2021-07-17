@@ -1,0 +1,21 @@
+.left-panel-wrapper {
+  flex-basis: 250px;
+  min-height: calc(100vh - 100px);
+
+  .profileDisplay {
+    padding: 20px 5px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .leftpanel-menu a {
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    display: block;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

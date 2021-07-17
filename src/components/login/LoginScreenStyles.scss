@@ -1,0 +1,11 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+.login-block {
+  padding: 50px;
+  width: 500px;
+}

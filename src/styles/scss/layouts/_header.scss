@@ -1,0 +1,8 @@
+%header {
+    height: 60px;
+    z-index: 2;
+    position: relative;
+    @extend %flex-basic;
+    @extend %flex-justify-space-between;
+    @extend %flex-align-center;
+}

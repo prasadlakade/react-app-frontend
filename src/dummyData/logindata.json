@@ -1,0 +1,15 @@
+{"users" :[{
+  "_id": 1,
+  "username":"user1",
+  "email":"user1@abc.com",
+  "password":"123a",
+  "category":"Administrator"
+},
+{
+  "_id": 2,
+  "username":"user2",
+  "email":"user2@abc.com",
+  "password":"123b",
+  "category":"Helpdesk"
+}]
+}

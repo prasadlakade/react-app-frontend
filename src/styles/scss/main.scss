@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers - importing all abstracts SCSS
+@import "./abstracts/all";
+
+// 2. Vendors - importing all Vendors scss
+
+// 3. Base stuff - importing all base SCSS
+@import "./base/all";
+
+// 4. Layout-related sections - importing all layout scss
+@import "./layouts/all";
+
+// 5. Components - importing all components scss
+@import "./components/all";
+
+// 6. Page-specific styles - importing all Pages scss
+@import "./pages/all";
+
+// 7. Themes - importing all themes scss
+@import "./themes/all";
+
+//
+.wrapper {
+  min-height: 100vh;
+
+  @include themify($themes) {
+    color: themed('textColorPrimary');
+    background-color: themed('backgroundColorPrimary');
+    @extend %common-transition-css;
+  }
+
+  a {
+    @include themify($themes) {
+      color: themed('linkColor');
+      @extend %common-transition-css;
+    }
+  }
+
+  //header scss
+  header {
+    @extend %header;
+
+    @include themify($themes) {
+      color: themed('textColorPrimary');
+      background-color: themed('backgroundColorSecondary');
+      box-shadow: 0 1px 5px 1px themed('boxShadow');
+      @extend %common-transition-css;
+    }
+
+    .main-menu {
+      ul {
+        li {
+          @include themify($themes) {
+            border-right: 1px solid themed('textColorPrimary');
+            @extend %common-transition-css;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    @include themify($themes) {
+      color: themed('textColorPrimary');
+      background-color: themed('backgroundColorSecondary');
+      @extend %common-transition-css;
+    }
+  }
+
+  //toggle switch
+  .switch {
+    @extend %switch;
+
+    input {
+      @extend %switch-input;
+    }
+
+    .slider {
+      @extend %slider;
+
+      &:before {
+        @extend %slider-before;
+      }
+    }
+
+    input:checked+.slider {
+      @extend %input-checked-slider;
+    }
+
+    input:focus+.slider {
+      @extend %input-focus-slider;
+    }
+
+    input:checked+.slider:before {
+      @extend %input-checked-slider-before;
+    }
+
+    .slider.round {
+      @extend %slider-round;
+    }
+
+    .slider.round:before {
+      @extend %slider-round-before;
+    }
+  }
+
+  .app-container {
+    min-height: calc(100vh - (70px + 30px));
+  }
+
+  .button {
+    @extend %btn;
+  }
+
+  .card-gm {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    @include themify($themes) {
+      background: themed('gmbackroundColor');
+      @extend %common-transition-css;
+    }
+  }
+
+  //Dashboard
+  .dashboard-wrapper {
+    .db-card:hover {
+      @include themify($themes) {
+        background: themed('backgoundColorHover');
+        background: themed('colorHover');
+        @extend %common-transition-css;
+      }
+    }
+
+    .db-headings {
+      @include themify($themes) {
+        background: themed('backgroundColorSidebar');
+        @extend %common-transition-css;
+      }
+    }
+  }
+
+  //Common panel left
+  .left-panel-wrapper {
+    @include themify($themes) {
+      background: themed('backgroundColorSidebar');
+      @extend %common-transition-css;
+    }
+  }
+
+  //common-wrap-flex
+  .common-wrap-flex {
+    display: flex;
+  }
+}

@@ -1,0 +1,39 @@
+header {
+  padding: 0 20px;
+
+  .logo-wrap {
+    h1 {
+      font-size: 16px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+
+  .right-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px
+  }
+
+  .main-menu {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20px;
+
+      li {
+        padding: 0 10px;
+        border-right: 1px solid #000;
+
+        a {
+          text-decoration: none;
+          font-weight: 700;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.dashboard-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .right-panel-wrapper {
+    flex-basis: calc(100% - 260px);
+    padding: 20px 0;
+
+    .db-headings {
+      padding: 10px 15px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: normal;
+      font-size: 17px;
+      display: inline-block;
+    }
+
+    .dashboard-content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%;
+
+      .db-card {
+        margin: 20px;
+        height: 150px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+
+        a {
+          display: block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .db-card {
+    padding: 20px;
+  }
+}
