@@ -16,7 +16,7 @@ const Header = (props) => {
 
   const onLogoutHeader = () => {
     onLogout();
-    props.history.push('/');
+    props.history.push(process.env.PUBLIC_URL + '/');
   };
 
   return (
@@ -30,7 +30,7 @@ const Header = (props) => {
                 <ul>
                   {(!authencationDetails.isloggedIn)
                     ? (<li>
-                      <Link to="/">Login</Link>
+                      <Link to={process.env.PUBLIC_URL + '/'}>Login</Link>
                     </li>)
                     : null
                   }

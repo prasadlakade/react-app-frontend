@@ -26,7 +26,7 @@ const CommonLeftPanel = (props) => {
                   <li>
                     <Link to="/dashboard" className="card-gm">Dashboard</Link>
                     <ul>
-                      {(authencationDetails.isloggedIn === 'Administrator')
+                      {(authencationDetails.category === 'Administrator')
                         ? (<li>
                           <Link to="/dashboard/groups" className="card-gm">Manage Groups</Link>
                           </li>)

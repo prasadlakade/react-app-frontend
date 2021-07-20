@@ -144,6 +144,21 @@
     }
   }
 
+  //
+  .table {
+    thead {
+      background-color: inherit;
+      position: sticky;
+      top: -1px;
+      z-index: 2;
+
+      @include themify($themes) {
+        box-shadow: 0 1px 5px 1px themed('boxShadow');
+        @extend %common-transition-css;
+      }
+    }
+  }
+
   //Common panel left
   .left-panel-wrapper {
     @include themify($themes) {

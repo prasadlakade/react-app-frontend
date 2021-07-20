@@ -70,7 +70,7 @@ const App = (props) => {
               <Route exact path="/dashboard">
                 <DashboardScreen mainTheme={mainTheme}/>
               </Route>
-              <Route exact path="/Login">
+              <Route exact path={process.env.PUBLIC_URL + '/'}>
               <LoginScreen setLoggedInDetails={setLoggedInDetails}/>
               </Route>
             </Switch>
